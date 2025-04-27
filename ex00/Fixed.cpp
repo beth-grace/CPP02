@@ -24,7 +24,7 @@ Fixed &Fixed::operator=(const Fixed &src)
 	if (this != &src)
 		this->_fp_number = src.getRawBits();
 
-	return *this;
+	return (*this);
 }
 
 int Fixed::getRawBits(void)const
