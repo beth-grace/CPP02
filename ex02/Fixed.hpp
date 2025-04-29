@@ -26,10 +26,10 @@ class Fixed
 		bool operator!=(Fixed fixed)const;
 
 		// Arithmetic Operators
-		float operator+(Fixed fixed)const;
-		float operator-(Fixed fixed)const;
-		float operator*(Fixed fixed)const;
-		float operator/(Fixed fixed)const;
+		Fixed operator+(Fixed fixed)const;
+		Fixed operator-(Fixed fixed)const;
+		Fixed operator*(Fixed fixed)const;
+		Fixed operator/(Fixed fixed)const;
 
 		// pre-increment Operators
 		Fixed operator++();
