@@ -40,42 +40,42 @@ Fixed &Fixed::operator=(const Fixed &src)
 	return *this;
 }
 
-bool	Fixed::operator>(Fixed fixed) const
+bool	Fixed::operator>(const Fixed &fixed) const
 {
 	return (this->_fp_number > fixed._fp_number);
 }
 
-bool	Fixed::operator<(Fixed fixed) const
+bool	Fixed::operator<(const Fixed &fixed) const
 {
 	return (this->_fp_number < fixed._fp_number);
 }
 
-bool	Fixed::operator>=(Fixed fixed) const
+bool	Fixed::operator>=(const Fixed &fixed) const
 {
 	return (this->_fp_number >= fixed._fp_number);
 }
 
-bool	Fixed::operator<=(Fixed fixed) const
+bool	Fixed::operator<=(const Fixed &fixed) const
 {
 	return (this->_fp_number <= fixed._fp_number);
 }
 
-bool	Fixed::operator==(Fixed fixed) const
+bool	Fixed::operator==(const Fixed &fixed) const
 {
 	return (this->_fp_number == fixed._fp_number);
 }
 
-bool	Fixed::operator!=(Fixed fixed) const
+bool	Fixed::operator!=(const Fixed &fixed) const
 {
 	return (this->_fp_number != fixed._fp_number);
 }
 
-Fixed	Fixed::operator+(Fixed fixed) const
+Fixed	Fixed::operator+(const Fixed &fixed) const
 {
 	return (this->_fp_number + fixed._fp_number);
 }
 
-Fixed	Fixed::operator-(Fixed fixed) const
+Fixed	Fixed::operator-(const Fixed &fixed) const
 {
 	return (this->_fp_number - fixed._fp_number);
 }

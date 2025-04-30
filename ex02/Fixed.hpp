@@ -18,16 +18,16 @@ class Fixed
 
         Fixed &operator=(const Fixed &src);
 
-        bool operator>(Fixed fixed)const;
-		bool operator<(Fixed fixed)const;
-		bool operator>=(Fixed fixed)const;
-		bool operator<=(Fixed fixed)const;
-		bool operator==(Fixed fixed)const;
-		bool operator!=(Fixed fixed)const;
+        bool operator>(const Fixed &fixed)const;
+		bool operator<(const Fixed &fixed)const;
+		bool operator>=(const Fixed &fixed)const;
+		bool operator<=(const Fixed &fixed)const;
+		bool operator==(const Fixed &fixed)const;
+		bool operator!=(const Fixed &fixed)const;
 
 		// Arithmetic Operators
-		Fixed operator+(Fixed fixed)const;
-		Fixed operator-(Fixed fixed)const;
+		Fixed operator+(const Fixed &fixed)const;
+		Fixed operator-(const Fixed &fixed)const;
 		Fixed operator*(Fixed fixed)const;
 		Fixed operator/(Fixed fixed)const;
 
